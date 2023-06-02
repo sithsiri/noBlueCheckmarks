@@ -1,0 +1,73 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+	--border-color: #808080;
+	--orange: #FFFFAB;
+  --orange-hover: #ffc200;
+	--blue: #CFF2F2;
+  --blue-hover: #00c2ff;
+
+	--border-radius: 0.5em;
+}
+
+html {
+	width: 200px;
+}
+
+body {
+	width: 200px;
+	margin: 0;
+	border: 2px solid var(--border-color);
+	border-radius: var(--border-radius);
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  width: 94%;
+  margin: 3%;
+  padding: 4px;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: var(--blue);
+	color: var(--text-color);
+  border: 2px solid var(--border-color);
+	border-radius: var(--border-radius);
+}
+
+button:hover {
+  background-color: var(--blue-hover);
+}
+
+button[type="reset"] {
+  background-color: var(--orange);
+}
+
+button[type="reset"]:hover {
+  background-color: var(--orange-hover);
+}
+
+#icon {
+	width: 35%;
+}
+#iconDiv {
+	display: flex;
+	justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+	  --bg-color: #000000;
+	  --text-color: #ffffff;
+		--border-color: #808080;
+		--orange: #5b5b41;
+	  --orange-hover: #b58900;
+		--blue: #485959;
+	  --blue-hover: #00c2ff;
+	}
+}
