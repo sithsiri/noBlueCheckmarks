@@ -1,3 +1,5 @@
+console.log("noBlueCheckmarks is active");
+
 if (!window.tweetSetupHasRun) {
   window.tweetSetupHasRun = true;
   var styleElement = document.createElement('style');

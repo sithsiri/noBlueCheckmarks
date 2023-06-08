@@ -19,7 +19,11 @@
   "content_scripts": [
     {
       "matches": ["*://*.twitter.com/*"],
-      "js": ["nobluecheckmarks.js"]
+      "js": [
+        "browser-polyfill.min.js",
+        "nobluecheckmarks.js"
+      ],
+      "run_at": "document_start"
     }
   ],
 
@@ -27,10 +31,6 @@
     "default_icon": "icons/noBlueCheckmarks-48.png",
     "default_title": "noBlueCheckmarks",
     "default_popup": "popup/popup.html"
-  },
-
-  "web_accessible_resources": [
-    "icons/noBlueCheckmarks-48.png"
-  ]
+  }
 
 }
